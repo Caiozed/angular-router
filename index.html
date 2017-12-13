@@ -4,19 +4,27 @@
 
 <head>
 <meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css" type="text/css" />
 <title>Hello...</title>
 </head>
 <div ng-app="routerApp">
 	<nav>
 		<ul class="navbar">
-			<li><a href="#!home">Home</a></li>
-			<li><a href="#!contact">Contact</a></li>
+			<li><a href="#">Home</a></li>
+			<div class="right">
+				<li><a href="#">My place</a></li>
+				<li><a href="#">Carrers</a></li>
+				<li><a href="#!contact">Contact</a></li>
+			</div>
 		</ul>
 	</nav>
   <div ng-view>
 
   </div>
+  <section class="footer">
+  	<a href="https://github.com/Caiozed/angular-router.git" target="_blank"><img src="images/github.svg"></a>
+  </section>
 </div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
